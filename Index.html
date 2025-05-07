@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Warllen Romero</title>
+    <title>Warllen Romero - Junior Fullstack Developer</title>
     <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
     <header>
-      <nav class="navegador">
+      <nav class="navegador" role="navigation">
         <div class="nombre">
           <h2>Warllen Romero</h2>
         </div>
@@ -20,7 +20,13 @@
           <a href="#contacto" class="barra-item">Contacto</a>
         </div>
         <div class="menu">
-          <img src="Imagenes/menu.png" alt="Menu" />
+          <button
+            class="menu-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <img src="Imagenes/menu.png" alt="Menu icon" />
+          </button>
           <section class="hamburguesa">
             <div class="barra2">
               <a href="#sobre-mi">Sobre Mi</a>
@@ -43,7 +49,7 @@
           </div>
           <div class="sobre-mi">
             <h3>Warllen Romero</h3>
-            <h4>Desarrollador Junior Fullsatck</h4>
+            <h4>Desarrollador Junior Fullstack</h4>
             <p>
               Desarrollador Junior Fullstack con experiencia en Python, HTML,
               CSS, JavaScript, Java, MySQL y PostgreSQL. Manejo sólido de
@@ -67,14 +73,14 @@
               />
             </a>
             <a
-              href="www.linkedin.com/in/warllen-steven-romero-rincon-7b685429a"
+              href="https://www.linkedin.com/in/warllen-steven-romero-rincon-7b685429a"
               target="_blank"
               class="iconos"
             >
               <img
                 id="linkedin"
                 src="Imagenes/imagen linkedin 2.png"
-                alt="Linkedin Warllen Romero"
+                alt="LinkedIn Warllen Romero"
               />
             </a>
           </div>
@@ -82,11 +88,12 @@
         <div class="foto">
           <img
             src="Imagenes/foto_steven-removebg-preview.png"
-            alt="Kevin Romero"
+            alt="Warllen Romero"
           />
         </div>
       </article>
     </section>
+
     <section class="Info">
       <div class="tarjetas">
         <h3>Misión</h3>
@@ -97,17 +104,15 @@
           participo.
         </p>
       </div>
-
       <div class="tarjetas">
         <h3>Visión</h3>
         <p>
-          Convertirme en una desarrolladora fullstack de referencia, combinando
+          Convertirme en un desarrollador fullstack de referencia, combinando
           habilidades técnicas sólidas con una mentalidad colaborativa y de
           aprendizaje continuo, para impactar positivamente en la transformación
           digital de las organizaciones.
         </p>
       </div>
-
       <div class="tarjetas">
         <h3>Valores</h3>
         <p>
@@ -116,7 +121,6 @@
           forma de trabajar y crecer profesionalmente.
         </p>
       </div>
-
       <div class="tarjetas">
         <h3>Habilidades Técnicas</h3>
         <p>
@@ -126,7 +130,6 @@
           Metodologías: Scrum, Kanban.
         </p>
       </div>
-
       <div class="tarjetas">
         <h3>Competencias Blandas</h3>
         <p>
@@ -141,7 +144,7 @@
     <section class="skills2" id="skills">
       <h1>Mis Habilidades</h1>
       <article class="skills">
-        <div class="categorias" id="python">
+        <div class="categorias">
           <img src="Imagenes/Python.png" alt="Logo Python" />
           <h2>Python</h2>
         </div>
@@ -175,46 +178,58 @@
         </div>
       </article>
     </section>
+
     <section class="proyectos" id="proyectos">
       <h2>Proyectos</h2>
       <article class="misProyectos">
         <div class="tarjetasProyectos">
           <a
             href="https://github.com/warllensteven/PROYECTO-FILTRO_ROMERO_KEVIN.git"
-            ><img src="Imagenes/Proyecto_Anuel.png" alt="Landing page de anuel"
-          /></a>
+          >
+            <img
+              src="Imagenes/Proyecto_Anuel.png"
+              alt="Landing page de Anuel"
+            />
+          </a>
         </div>
         <div class="tarjetasProyectos">
           <a
             href="https://github.com/warllensteven/Proyecto_JavaScript_Romero_Kevin.git"
-            ><img
+          >
+            <img
               src="Imagenes/Need_For_Sped_Proyecto.png"
               alt="Parqueadero Need For Speed"
-          /></a>
+            />
+          </a>
         </div>
         <div class="tarjetasProyectos">
           <a
             href="https://github.com/warllensteven/Proyecto_JavaScript_Santacruz_Santiago_Romero_Kevin.git"
-            ><img src="Imagenes/Api_Starwars.png" alt="Api Star wars"
-          /></a>
+          >
+            <img src="Imagenes/Api_Starwars.png" alt="API Star Wars" />
+          </a>
         </div>
         <div class="tarjetasProyectos">
-          <a href="https://github.com/Santiago-SanP05/Tienda_De_Disfrases"
-            ><img
+          <a href="https://github.com/Santiago-SanP05/Tienda_De_Disfrases">
+            <img
               src="Imagenes/Tienda_disfrases_base_datos.png"
-              alt="Tienda de Disfrase Base de Datos"
-          /></a>
+              alt="Tienda de Disfraces Base de Datos"
+            />
+          </a>
         </div>
         <div class="tarjetasProyectos">
           <a
             href="https://github.com/warllensteven/My_Big_PetShop/blob/main/ERDDiagram1.jpg"
-            ><img
+          >
+            <img
               src="Imagenes/MI_big_pet_shop.jpg"
-              alt="Base de Datos Mi big Pet Shop"
-          /></a>
+              alt="Base de Datos Mi Big Pet Shop"
+            />
+          </a>
         </div>
       </article>
     </section>
+
     <section class="certificaciones" id="certificaciones">
       <h2>Certificaciones</h2>
       <article class="misCertificaciones">
@@ -230,7 +245,7 @@
         <div class="tarjetasCertificaciones" id="campus">
           <img
             src="Imagenes/Captura de pantalla 2025-01-14 220659.png"
-            alt="Campuslands"
+            alt="Certificado Campuslands"
           />
           <h2>Técnico Laboral en Desarrollo de Software Full-Stack</h2>
           <h3>Campuslands</h3>
@@ -238,34 +253,63 @@
         </div>
       </article>
     </section>
+
     <section class="contacto" id="contacto">
       <h2>Contáctame</h2>
       <article class="misContactos">
         <div class="contacta" id="conGithub">
           <img src="Imagenes/Imagen github.png" alt="Github" />
-          <p>https://github.com/warllensteven</p>
+          <p>
+            <a href="https://github.com/warllensteven" target="_blank"
+              >github.com/warllensteven</a
+            >
+          </p>
         </div>
         <div class="contacta" id="conLinkedin">
           <img src="Imagenes/imagen linkedin 2.png" alt="LinkedIn" />
-          <p>www.linkedin.com/in/warllen-steven-romero-rincon-7b685429a</p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/warllen-steven-romero-rincon-7b685429a"
+              target="_blank"
+              >linkedin.com/in/warllen-steven-romero-rincon</a
+            >
+          </p>
         </div>
         <div class="contacta" id="conCorreo">
           <img src="Imagenes/logo correo.png" alt="Correo" />
-          <p>warlenromero14@gmail.com</p>
+          <p>
+            <a href="mailto:warlenromero14@gmail.com"
+              >warlenromero14@gmail.com</a
+            >
+          </p>
         </div>
         <div class="contacta" id="conTelefono">
           <img src="Imagenes/Logo Telefono.webp" alt="Teléfono" />
-          <p>3209640363</p>
+          <p><a href="tel:+573209640363">3209640363</a></p>
         </div>
         <div class="contacta" id="conWhatssapp">
           <img src="Imagenes/Logo whatsapp.webp" alt="WhatsApp" />
-          <p>+57 3209640363</p>
+          <p>
+            <a href="https://wa.me/+573209640363" target="_blank"
+              >+57 3209640363</a
+            >
+          </p>
         </div>
         <div class="contacta" id="conInstagram">
           <img src="Imagenes/logo instagram.png" alt="Instagram" />
-          <p>@warlen_steven</p>
+          <p>
+            <a href="https://www.instagram.com/warlen_steven" target="_blank"
+              >@warlen_steven</a
+            >
+          </p>
         </div>
       </article>
     </section>
+
+    <footer>
+      <p>&copy; 2025 Warllen Romero. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
