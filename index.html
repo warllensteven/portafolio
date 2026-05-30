@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warllen Romero — Fullstack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23080b10'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='14' fill='%2300d4ff'>WR</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Cursor personalizado -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- Fondo animado -->
+    <canvas id="bgCanvas"></canvas>
+
+    <!-- HEADER -->
+    <header id="header">
+      <nav class="nav-container">
+        <div class="logo">
+          <span class="logo-bracket">[</span>WR<span class="logo-bracket"
+            >]</span
+          >
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#sobre-mi" class="nav-link"
+              ><span class="nav-num">01.</span>Sobre mí</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="nav-link"
+              ><span class="nav-num">02.</span>Skills</a
+            >
+          </li>
+          <li>
+            <a href="#proyectos" class="nav-link"
+              ><span class="nav-num">03.</span>Proyectos</a
+            >
+          </li>
+          <li>
+            <a href="#certificaciones" class="nav-link"
+              ><span class="nav-num">04.</span>Certificaciones</a
+            >
+          </li>
+          <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+        </ul>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#sobre-mi" class="mob-link">Sobre mí</a>
+        <a href="#skills" class="mob-link">Skills</a>
+        <a href="#proyectos" class="mob-link">Proyectos</a>
+        <a href="#certificaciones" class="mob-link">Certificaciones</a>
+        <a href="#contacto" class="mob-link">Contacto</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="sobre-mi">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow" data-reveal>Fullstack Developer</p>
+          <h1 class="hero-name" data-reveal>
+            <span class="name-line">Warllen</span>
+            <span class="name-line accent-line">Romero</span>
+          </h1>
+          <p class="hero-bio" data-reveal>
+            Construyo experiencias digitales funcionales y elegantes. Python,
+            JavaScript, Java, Spring Boot, SQL — de la idea a la producción.
+          </p>
+          <div class="hero-actions" data-reveal>
+            <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+            <a href="#contacto" class="btn-ghost">Hablemos</a>
+          </div>
+          <div class="hero-socials" data-reveal>
+            <a
+              href="https://github.com/warllensteven"
+              target="_blank"
+              class="social-link"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/warllen-steven-romero-rincon-7b685429a"
+              target="_blank"
+              class="social-link"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual" data-reveal>
+          <div class="avatar-wrapper">
+            <div class="avatar-ring ring1"></div>
+            <div class="avatar-ring ring2"></div>
+            <div class="avatar-placeholder">
+              <img
+                src="Imagenes/foto_steven.png"
+                alt="Warllen Romero"
+                class="avatar-photo"
+                onerror="
+                  this.style.display = 'none';
+                  document.querySelector('.avatar-initials').style.display =
+                    'flex';
+                "
+              />
+              <div class="avatar-initials" style="display: none">WR</div>
+            </div>
+            <div class="floating-badge badge1">React</div>
+            <div class="floating-badge badge2">Spring Boot</div>
+            <div class="floating-badge badge3">TypeScript</div>
+            <div class="floating-badge badge4">Angular</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT CARDS -->
+    <section class="about-cards">
+      <div class="cards-grid">
+        <div class="about-card" data-reveal>
+          <div class="card-icon">🎯</div>
+          <h3>Misión</h3>
+          <p>
+            Crear soluciones tecnológicas funcionales y accesibles que aporten
+            valor real, aplicando metodologías ágiles y buenas prácticas de
+            desarrollo.
+          </p>
+        </div>
+        <div class="about-card" data-reveal>
+          <div class="card-icon">🚀</div>
+          <h3>Visión</h3>
+          <p>
+            Convertirme en un desarrollador fullstack de referencia, con
+            habilidades técnicas sólidas y mentalidad colaborativa orientada al
+            impacto digital.
+          </p>
+        </div>
+        <div class="about-card" data-reveal>
+          <div class="card-icon">⚡</div>
+          <h3>Valores</h3>
+          <p>
+            Compromiso, disciplina, aprendizaje constante y pasión por la
+            tecnología. Trabajo en equipo y adaptabilidad ante cualquier reto.
+          </p>
+        </div>
+        <div class="about-card card-highlight" data-reveal>
+          <div class="card-icon">💻</div>
+          <h3>Stack</h3>
+          <p>
+            Python · JavaScript · Java · HTML/CSS · Spring Boot · MySQL ·
+            PostgreSQL · Git · Scrum · Kanban
+          </p>
+        </div>
+        <div class="about-card" data-reveal>
+          <div class="card-icon">🤝</div>
+          <h3>Soft Skills</h3>
+          <p>
+            Comunicación efectiva, pensamiento crítico, liderazgo colaborativo y
+            capacidad de aprendizaje autónomo en entornos exigentes.
+          </p>
+        </div>
+        <div class="about-card" data-reveal>
+          <div class="card-icon">🌍</div>
+          <h3>Idiomas</h3>
+          <p>
+            Español nativo e inglés B1. Capacidad para leer documentación
+            técnica, colaborar en equipos internacionales y seguir aprendiendo
+            en entornos globales.
+          </p>
+        </div>
+        <div class="about-card" data-reveal>
+          <div class="card-icon">🔄</div>
+          <h3>Metodologías</h3>
+          <p>
+            Experiencia trabajando con Scrum y Kanban en entornos académicos y
+            profesionales. Gestión de tareas, sprints y colaboración ágil en
+            equipo.
+          </p>
+        </div>
+        <div class="about-card card-highlight" data-reveal>
+          <div class="card-icon">📍</div>
+          <h3>Disponibilidad</h3>
+          <p>
+            Paz de Ariporo, Colombia. Disponible para trabajo remoto, híbrido o
+            reubicación. Abierto a oportunidades freelance y posiciones
+            full-time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section" id="skills">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">02. Habilidades</span>
+        <h2>Mi Stack Tecnológico</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item" data-reveal style="--i: 0">
+          <div class="skill-icon">
+            <img
+              src="Imagenes/Python.png"
+              alt="Python"
+              onerror="this.parentElement.innerHTML = '🐍'"
+            />
+          </div>
+          <span class="skill-name">Python</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 1">
+          <div class="skill-icon">
+            <img
+              src="Imagenes/Java.webp"
+              alt="Java"
+              onerror="this.parentElement.innerHTML = '☕'"
+            />
+          </div>
+          <span class="skill-name">Java</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 2">
+          <div class="skill-icon">
+            <img
+              src="Imagenes/JavaScript.webp"
+              alt="JavaScript"
+              onerror="this.parentElement.innerHTML = '⚡'"
+            />
+          </div>
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 3">
+          <div class="skill-icon">
+            <img
+              src="Imagenes/Html.png"
+              alt="HTML"
+              onerror="this.parentElement.innerHTML = '🌐'"
+            />
+          </div>
+          <span class="skill-name">HTML</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 4">
+          <div class="skill-icon">
+            <img
+              src="Imagenes/Css.png"
+              alt="CSS"
+              onerror="this.parentElement.innerHTML = '🎨'"
+            />
+          </div>
+          <span class="skill-name">CSS</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 88%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 5">
+          <div class="skill-icon">
+            <img
+              src="Imagenes/SpringBoot.png"
+              alt="Spring Boot"
+              onerror="this.parentElement.innerHTML = '🍃'"
+            />
+          </div>
+          <span class="skill-name">Spring Boot</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 6">
+          <div class="skill-icon">
+            <img
+              src="Imagenes/Mysql.webp"
+              alt="MySQL"
+              onerror="this.parentElement.innerHTML = '🗄️'"
+            />
+          </div>
+          <span class="skill-name">MySQL</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 78%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 7">
+          <div class="skill-icon">
+            <img
+              src="Imagenes/PostgresSql.png"
+              alt="PostgreSQL"
+              onerror="this.parentElement.innerHTML = '🐘'"
+            />
+          </div>
+          <span class="skill-name">PostgreSQL</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 8">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+              onerror="this.parentElement.innerHTML = '⚛️'"
+            />
+          </div>
+          <span class="skill-name">React</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 78%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 9">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              alt="TypeScript"
+              onerror="this.parentElement.innerHTML = '🔷'"
+            />
+          </div>
+          <span class="skill-name">TypeScript</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 72%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 10">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              onerror="this.parentElement.innerHTML = '🐙'"
+              style="filter: invert(1)"
+            />
+          </div>
+          <span class="skill-name">GitHub</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 88%"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal style="--i: 11">
+          <div class="skill-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+              alt="Angular"
+              onerror="this.parentElement.innerHTML = '🅰️'"
+            />
+          </div>
+          <span class="skill-name">Angular</span>
+          <div class="skill-bar">
+            <div class="skill-fill" style="--w: 65%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="projects-section" id="proyectos">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">03. Proyectos</span>
+        <h2>Lo que he construido</h2>
+      </div>
+      <div class="projects-grid">
+        <a
+          href="https://github.com/warllensteven/PROYECTO-FILTRO_ROMERO_KEVIN.git"
+          target="_blank"
+          class="project-card"
+          data-reveal
+        >
+          <div class="project-img-wrap">
+            <img
+              src="Imagenes/Proyecto_Anuel.png"
+              alt="Landing page Anuel"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="project-overlay">
+              <span>Ver en GitHub →</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tech">HTML · CSS</span>
+            <h3>Landing Page — Anuel AA</h3>
+            <p>
+              Página de presentación con diseño moderno y responsivo para el
+              artista urbano.
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/warllensteven/Proyecto_JavaScript_Romero_Kevin.git"
+          target="_blank"
+          class="project-card"
+          data-reveal
+        >
+          <div class="project-img-wrap">
+            <img
+              src="Imagenes/Need_For_Sped_Proyecto.png"
+              alt="Parqueadero Need For Speed"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="project-overlay">
+              <span>Ver en GitHub →</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tech">JavaScript</span>
+            <h3>Parqueadero — Need For Speed</h3>
+            <p>
+              Sistema de gestión de parqueadero con lógica de entrada/salida y
+              tarifas dinámicas.
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/warllensteven/Proyecto_JavaScript_Santacruz_Santiago_Romero_Kevin.git"
+          target="_blank"
+          class="project-card"
+          data-reveal
+        >
+          <div class="project-img-wrap">
+            <img
+              src="Imagenes/Api_Starwars.png"
+              alt="API Star Wars"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="project-overlay">
+              <span>Ver en GitHub →</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tech">JavaScript · API REST</span>
+            <h3>Star Wars API Explorer</h3>
+            <p>
+              Consumo de la API pública de Star Wars con visualización de
+              personajes y naves.
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/Santiago-SanP05/Tienda_De_Disfrases"
+          target="_blank"
+          class="project-card"
+          data-reveal
+        >
+          <div class="project-img-wrap">
+            <img
+              src="Imagenes/Tienda_disfrases_base_datos.png"
+              alt="Tienda Disfraces BD"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="project-overlay">
+              <span>Ver en GitHub →</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tech">SQL · PostgreSQL</span>
+            <h3>Tienda de Disfraces — BD</h3>
+            <p>
+              Base de datos relacional para gestión de inventario y ventas de
+              tienda de disfraces.
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/warllensteven/My_Big_PetShop/blob/main/ERDDiagram1.jpg"
+          target="_blank"
+          class="project-card"
+          data-reveal
+        >
+          <div class="project-img-wrap">
+            <img
+              src="Imagenes/MI_big_pet_shop.jpg"
+              alt="Mi Big Pet Shop"
+              onerror="this.style.display = 'none'"
+            />
+            <div class="project-overlay">
+              <span>Ver en GitHub →</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tech">MySQL · ERD</span>
+            <h3>My Big Pet Shop</h3>
+            <p>
+              Diseño de base de datos completa para gestión de mascotas,
+              clientes y servicios veterinarios.
+            </p>
+          </div>
+        </a>
+
+        <!-- CARD DISPONIBLE — reemplaza href, imagen, tech, título y descripción -->
+        <div class="project-card project-card--empty" data-reveal>
+          <div class="project-img-wrap project-img-wrap--empty">
+            <div class="empty-icon">＋</div>
+          </div>
+          <div class="project-info">
+            <span class="project-tech">Próximamente</span>
+            <h3>Tu próximo proyecto</h3>
+            <p>
+              Este espacio está listo — reemplaza esta card con tu nuevo
+              proyecto cuando lo tengas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICACIONES -->
+    <section class="certs-section" id="certificaciones">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">04. Certificaciones</span>
+        <h2>Formación y Logros</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card" data-reveal>
+          <div class="cert-header">
+            <div class="cert-year">2020</div>
+            <div class="cert-badge">🎓</div>
+          </div>
+          <div class="cert-body">
+            <h3>Bachiller Técnico en Profundización Pedagógica</h3>
+            <span class="cert-org"
+              >Escuela Normal Superior Santiago de Tunja</span
+            >
+            <p class="cert-desc">
+              Formación con énfasis pedagógico y técnico, base sólida para el
+              pensamiento analítico y el desarrollo profesional.
+            </p>
+          </div>
+          <div class="cert-tags">
+            <span>Técnico</span><span>Educación</span>
+          </div>
+        </div>
+        <div class="cert-card cert-featured" data-reveal>
+          <div class="cert-header">
+            <div class="cert-year">2023</div>
+            <div class="cert-badge">🏆</div>
+          </div>
+          <div class="cert-body">
+            <h3>Desarrollador Full Stack</h3>
+            <span class="cert-org">GoIT Latam &mdash; Ene 2023 · Dic 2023</span>
+            <p class="cert-desc">
+              Bootcamp intensivo de desarrollo web full-stack con enfoque en
+              frontend moderno, backend y despliegue de aplicaciones.
+            </p>
+          </div>
+          <div class="cert-tags">
+            <span>React</span><span>MongoDB</span><span>Node.js</span
+            ><span>Tailwind</span>
+          </div>
+        </div>
+        <div class="cert-card cert-featured" data-reveal>
+          <div class="cert-header">
+            <div class="cert-year">2025</div>
+            <div class="cert-badge">🥇</div>
+          </div>
+          <div class="cert-body">
+            <h3>Técnico Laboral en Desarrollo de Software Full-Stack</h3>
+            <span class="cert-org"
+              >Campuslands &mdash; Ago 2024 · Jun 2025</span
+            >
+            <p class="cert-desc">
+              Formación intensiva en desarrollo web full-stack: frontend,
+              backend, bases de datos y metodologías ágiles.
+            </p>
+          </div>
+          <div class="cert-tags">
+            <span>Python</span><span>JavaScript</span><span>Java</span
+            ><span>SQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact-section" id="contacto">
+      <div class="contact-inner">
+        <div class="contact-text" data-reveal>
+          <span class="section-tag">05. Contacto</span>
+          <h2>
+            ¿Tienes un proyecto?<br /><span class="accent">Hablemos.</span>
+          </h2>
+          <p>
+            Estoy disponible para oportunidades freelance y posiciones a tiempo
+            completo. Si tienes un proyecto interesante o quieres trabajar
+            juntos, no dudes en contactarme.
+          </p>
+        </div>
+        <div class="contact-links" data-reveal>
+          <a href="mailto:warlenromero14@gmail.com" class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">warlenromero14@gmail.com</p>
+            </div>
+          </a>
+          <a
+            href="https://wa.me/+573209640363"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">💬</div>
+            <div>
+              <p class="contact-label">WhatsApp</p>
+              <p class="contact-value">+57 320 964 0363</p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/warllensteven"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <p class="contact-value">warllensteven</p>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/warllen-steven-romero-rincon-7b685429a"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <p class="contact-value">Warllen Romero</p>
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/warlen_steven"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">📸</div>
+            <div>
+              <p class="contact-label">Instagram</p>
+              <p class="contact-value">@warlen_steven</p>
+            </div>
+          </a>
+          <a href="tel:+573209640363" class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <p class="contact-label">Teléfono</p>
+              <p class="contact-value">+57 320 964 0363</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        <span class="logo-bracket">[</span>WR<span class="logo-bracket">]</span>
+        &nbsp;·&nbsp; Warllen Romero &nbsp;·&nbsp;
+        <span class="accent">2025</span>
+      </p>
+      <p class="footer-sub">Construido con HTML, CSS & JS puro.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
